@@ -1,0 +1,44 @@
+{
+  "name": "node-express-client-routing-template",
+  "version": "2.0.0",
+  "description": "Node/Express template for base directory on build. Uses Webpack and Navigo for Routing",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build-prod && npm run forever",
+    "forever": "node node_modules/forever/bin/forever start app.js",
+    "stop": "node node_modules/forever/bin/forever stop app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://10.25.34.113:4700/bberzellini/express-client-routing"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.21.0",
+    "connect-history-api-fallback": "^1.5.0",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.12.0",
+    "gulp-util": "^3.0.6",
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.4.0",
+    "html-loader": "^0.4.4",
+    "jquery": "^3.1.1",
+    "navigo": "^6.0.1",
+    "node-sass": "^4.7.2",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.10.5"
+  }
+}
