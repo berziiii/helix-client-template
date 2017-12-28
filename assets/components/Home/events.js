@@ -5,8 +5,7 @@ let ui = require('./ui.js');
 let api = require('./api.js');
 
 let renderTemplate = () => {
-    debugger;
-    ui.renderIndexTemplate();
+    ui.renderHomeTemplate();
 };
 
 let registerEvents = () => {

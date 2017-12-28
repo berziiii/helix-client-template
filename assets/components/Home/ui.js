@@ -2,11 +2,10 @@
 
 let template = require('./template.hbs');
 
-let renderIndexTemplate = function() {
-    debugger;
+let renderHomeTemplate = function() {
     $('app-template').html('');
     $('app-template').html(template());
 }
 module.exports = {
-    renderIndexTemplate,
+    renderHomeTemplate,
 }
