@@ -1,10 +1,10 @@
+'use strict';
+
 // ************************************ //
 // *****                          ***** //
-// *****  APPLICATION TYPOGRAPHY  ***** //
+// *****   JAVSCRIPT MANIFEST     ***** //
 // *****                          ***** //
 // ************************************ //
 
-html {
-    font-size: 16px;
-    font-weight: 500;
-}
+require('./app/app.index.js');
+

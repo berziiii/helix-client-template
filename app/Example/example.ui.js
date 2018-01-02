@@ -1,6 +1,6 @@
 'use strict';
 
-let template = require('./template.hbs');
+let template = require('./example.component.hbs');
 
 let renderExampleTemplate = function() {
     $('app-template').html('');

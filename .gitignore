@@ -5,12 +5,5 @@ npm-debug.log*
 launch.json
 tmp
 public/
-/**/*.woff2
-/**/*.woff
-/**/*.svg
-/**/*.ttf
-/**/*.eot
-/**/*.jpg
-/**/*.png
-/**/*.svg
+dist/
 !*.keep

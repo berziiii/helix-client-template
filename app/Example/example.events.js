@@ -1,8 +1,8 @@
 'use strict';
 
-let app = require('../../scripts/app.js');
-let ui = require('./ui.js');
-let api = require('./api.js');
+let app = require('../app.global.js');
+let ui = require('./example.ui.js');
+let api = require('./example.api.js');
 
 let renderTemplate = () => {
     ui.renderExampleTemplate();

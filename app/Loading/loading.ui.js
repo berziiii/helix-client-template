@@ -1,6 +1,6 @@
 'use strict';
 
-let loadingTemplate = require('./template.hbs');
+let loadingTemplate = require('./loading.component.hbs');
 
 let renderLoading = () => {
     $('app-template').html('');

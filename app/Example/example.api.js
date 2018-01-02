@@ -1,8 +1,8 @@
 'use strict';
 
-let app = require('./app.js');
+let app = require('../app.global.js');
 
-let exampleApi = function(data) {
+let exampleTemplateApi = function(data) {
   return $.ajax({
     method: "POST",
     url: app.apiUrl + '/examples',
@@ -11,5 +11,5 @@ let exampleApi = function(data) {
 };
 
 module.exports = {
-  exampleApi,
+  exampleTemplateApi,
 };

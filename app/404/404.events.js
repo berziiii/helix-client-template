@@ -1,7 +1,7 @@
 'use strict';
 
-let app = require('../../scripts/app.js');
-let ui = require('./ui.js');
+let app = require('../app.global.js');
+let ui = require('./404.ui.js');
 
 let renderNotFoundTemplate = () => {
     ui.renderNotFound();

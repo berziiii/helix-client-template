@@ -1,7 +1,7 @@
 'use strict';
 
-let app = require('../../scripts/app.js');
-let ui = require('./ui.js');
+let app = require('../app.global.js');
+let ui = require('./loading.ui.js');
 
 let renderLoadingTemplate = () => {
     ui.renderLoading();

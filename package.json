@@ -1,16 +1,15 @@
 {
-  "name": "node-express-client-routing-template",
+  "name": "client-template",
   "version": "2.0.0",
-  "description": "Node/Express template for base directory on build. Uses Webpack and Navigo for Routing",
+  "description": "Client Template for base directory on build. Uses Webpack, Browsersync and Navigo for Routing",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build-prod && npm run forever",
-    "forever": "node node_modules/forever/bin/forever start app.js",
-    "stop": "node node_modules/forever/bin/forever stop app.js"
+    "build": "gulp build",
+    "generate": "chmod a+x ./cli/generate.sh && ./cli/generate.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+http://10.25.34.113:4700/bberzellini/express-client-routing"
+    "url": "git+http://10.25.34.113:4700/bberzellini/client-template"
   },
   "license": "MIT",
   "private": true,
@@ -26,6 +25,9 @@
     "font-awesome": "^4.7.0",
     "forever": "^0.15.3",
     "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-copy": "^1.0.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-postcss": "^7.0.0",

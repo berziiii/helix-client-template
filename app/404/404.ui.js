@@ -1,6 +1,6 @@
 'use strict';
 
-let notFoundTemplate = require('./template.hbs');
+let notFoundTemplate = require('./404.component.hbs');
 
 let renderNotFound = () => {
     $('app-template').html('');
