@@ -4,8 +4,7 @@
   "description": "Client Template for base directory on build. Uses Webpack, Browsersync and Navigo for Routing",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build",
-    "generate": "chmod a+x ./cli/generate.sh && ./cli/generate.sh"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
