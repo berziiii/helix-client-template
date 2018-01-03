@@ -6,6 +6,10 @@
     "start": "gulp serve",
     "build": "gulp build"
   },
+  "main": "lib/cli.js",
+  "bin": {
+    "quasar": "lib/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+http://10.25.34.113:4700/bberzellini/client-template"
