@@ -7,31 +7,39 @@ let Home = require('./Home/home.events.js');
 let Example = require('./Example/example.events.js');
 
 // *** USED TO UPDATE NAVIGO ROUTES FROM VIEWS THAT ARE DYNAMICALLY BUILT *** //
-let updateViewLinks = function() {
+let updateViewLinks = () => {
   app.router.updatePageLinks();
 };
 
 let toggleNav = (route) => {
   $('.active-nav').removeClass('active-nav');
-  $(`a[href='${route.url}']`).addClass('active-nav');
+  $(`a[href='${route.path}']`).addClass('active-nav');
 };
 
+let renderHome = () => {
+  Home.renderTemplate();
+  Home.registerEvents();
+};
+
+let renderExample = () => {
+  Example.renderTemplate();
+  Example.registerEvents();
+}
+
 let generateView = function(route) {
-  let template = route.template;
-  if (template === "Home") {
-    Home.renderTemplate();
-    Home.registerEvents();
+  if (route.name === "Home") {
+    renderHome();
   }
-  if (template === "Example") {
-    Example.renderTemplate();
-    Example.registerEvents();
+  if (route.name === "Example") {
+    renderExample();
   }
   toggleNav(route);
   // *** Updates Page Links when new view is rendered *** //
-  app.router.updatePageLinks();
+  updateViewLinks();
 };
 
-let registerEventHandlers = function() {
+let registerEventHandlers = () => {
+  // Application Events
 };
 
 

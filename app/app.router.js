@@ -17,19 +17,16 @@ let getInitialRoute = (route) => {
   router.navigate(route);
 };
 
-let routeViewBuildout = (template) => {
+// let routeViewBuildout = (template) => {
+let routeViewBuildout = (route) => {
   Loading.renderLoadingTemplate();
-  let route = {
-    url: getCurrentUrl(),
-    template: template.name
-  };
   events.generateView(route);
 };
 
 let generateRoutes = (router) => {
   let routeObj = {}
   ROUTES.forEach((route) => {
-    routeObj[`${route.path}`] = function() { routeViewBuildout({name: `${route.name}`}) };
+    routeObj[`${route.path}`] = function() { routeViewBuildout(route) };
   });
   router.on(routeObj).resolve();
 }

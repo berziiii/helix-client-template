@@ -7,13 +7,13 @@
 .application-container {
     width: 100vw;
     min-height: 100vh;
-    padding: 0px 10px;
     background: $white;
 }
 
-template {
+app-template {
     width: auto;
     min-height: 100%;
+    padding: 0px 10px;
     max-width: 1500px;
     margin: 0 auto;
     background: $white;
@@ -23,7 +23,7 @@ nav {
     width: 100vw;
     background: $black;
     min-height: 1px;
-    box-shadow: 0px 5px 5px 0px #aaa;
+    box-shadow: 0px 3px 5px 0px #ccc;
 }
 
 .nav-container {
@@ -38,9 +38,9 @@ nav {
     display: inline-block;
     float: left;
     width: auto;
-    padding: 3px 10px;
+    padding: 8px 10px;
     img {
-        height: 50px;
+        height: 40px;
     }
 }
 
