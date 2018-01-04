@@ -8,7 +8,8 @@
   },
   "main": "lib/cli.js",
   "bin": {
-    "quasar": "lib/cli.js"
+    "helix": "lib/cli.js",
+    "hx": "lib/cli.js"
   },
   "repository": {
     "type": "git",
@@ -48,5 +49,8 @@
     "uglifyjs-webpack-plugin": "^1.1.4",
     "url-loader": "^0.5.7",
     "webpack": "^1.10.5"
+  },
+  "dependencies": {
+    "colors": "^1.1.2"
   }
 }

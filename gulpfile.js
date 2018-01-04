@@ -89,6 +89,7 @@ gulp.task('minify-img', () =>
 
 gulp.task('watch', function() {
     gulp.watch('app/**/*.js', ['reload-js']);
+    gulp.watch('assets/styles/*.scss', ['reload-css']);
     gulp.watch('app/**/*.scss', ['reload-css']);
     gulp.watch('app/**/*.hbs', ['reload-js']);
 });

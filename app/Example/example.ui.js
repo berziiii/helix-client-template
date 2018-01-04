@@ -1,3 +1,4 @@
+
 'use strict';
 
 let template = require('./example.component.hbs');

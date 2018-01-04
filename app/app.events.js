@@ -1,49 +1,37 @@
 'use strict';
-
-let app =require('./app.global.js');
-let api = require('./app.api.js');
-let ui = require('./app.ui.js');
-let Home = require('./Home/home.events.js');
-let Example = require('./Example/example.events.js');
+const Home = require('./Home/home.events.js');
+const Example = require('./Example/example.events.js');
+const app =require('./app.global.js');
+const api = require('./app.api.js');
+const ui = require('./app.ui.js');
 
 // *** USED TO UPDATE NAVIGO ROUTES FROM VIEWS THAT ARE DYNAMICALLY BUILT *** //
-let updateViewLinks = () => {
+const updateViewLinks = () => {
   app.router.updatePageLinks();
 };
 
-let toggleNav = (route) => {
+const toggleNav = (route) => {
   $('.active-nav').removeClass('active-nav');
   $(`a[href='${route.path}']`).addClass('active-nav');
 };
 
-let renderHome = () => {
-  Home.renderTemplate();
-  Home.registerEvents();
-};
-
-let renderExample = () => {
-  Example.renderTemplate();
-  Example.registerEvents();
-}
-
-let generateView = function(route) {
-  if (route.name === "Home") {
-    renderHome();
-  }
-  if (route.name === "Example") {
-    renderExample();
-  }
+const generateView = function(route) {
+  // Renders the view by Route Name
+  eval(`${route.name}.renderTemplate()`);
+  eval(`${route.name}.registerEvents()`);
+  // Highlights Navigation if present with correct option
   toggleNav(route);
   // *** Updates Page Links when new view is rendered *** //
   updateViewLinks();
 };
 
-let registerEventHandlers = () => {
+const registerEventHandlers = () => {
   // Application Events
 };
-
 
 module.exports = {
  registerEventHandlers,
  generateView,
 };
+
+
