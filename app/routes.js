@@ -1,4 +1,4 @@
 module.exports = [
-    { name: 'Home', path: '/' },
-    { name: 'Example', path: '/example' },
+    { name: 'home', path: '/' },
+    { name: 'example', path: '/example' },
 ];

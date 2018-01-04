@@ -1,7 +1,7 @@
 'use strict';
 
 let app = require('./app.global.js');
-let Loading = require('./Loading/loading.events.js');
+let Loading = require('./loading/loading.events.js');
 let notFound = require('./404/404.events.js');
 let events = require('./app.events.js');
 let Navigo = require('../node_modules/navigo/lib/navigo.js');

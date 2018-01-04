@@ -1,6 +1,6 @@
 'use strict';
-const Home = require('./Home/home.events.js');
-const Example = require('./Example/example.events.js');
+const home = require('./home/home.events.js');
+const example = require('./example/example.events.js');
 const app =require('./app.global.js');
 const api = require('./app.api.js');
 const ui = require('./app.ui.js');
