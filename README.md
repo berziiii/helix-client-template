@@ -44,7 +44,7 @@ Fix any conflicts.
 
                                         WELCOME TO HELIX!
 
-                    INSIGHT STUDIO\'S COMMAND LINE INTERFACE FOR CLIENT TEMPLATES.
+                    INSIGHT STUDIO'S COMMAND LINE INTERFACE FOR CLIENT TEMPLATES.
 
                                              ENJOY!
 ```
