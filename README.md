@@ -65,6 +65,8 @@ All files that consist of `app.<%something%>.ext` are part of the application co
 <img src="assets/images/example.jpg" rel="Example Image"/>
 ```
 
+This is due to the fact of where all the components `.hbs` files are being rendering from - `index.html`. Therefore, the path to the asset must start at the root.
+
 #### BROWSERSYNC
 Browsersync is the web server that handles the compiling and rendering of the application. `gulp serve` will run watch functions on ALL `.js` `.hbs` `.scss` files and if a change is made to a file, it will recompile and refresh the browser
 
