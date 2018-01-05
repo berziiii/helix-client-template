@@ -3,14 +3,14 @@
 
 let app = require('../app.global.js');
     
-let exampleTemplateApi = function(data) {
+let getExamples = function(data) {
     return $.ajax({
-        method: "POST",
-        url: app.apiUrl + '/example',
+        method: "GET",
+        url: app.apiUrl + '/examples',
         data,
     });
 };
 
 module.exports = {
-    exampleTemplateApi,
+    getExamples,
 };

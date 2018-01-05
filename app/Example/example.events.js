@@ -9,8 +9,18 @@ let renderTemplate = () => {
     ui.renderExampleTemplate();
 };
 
-let registerEvents = () => {
+let getExamples = () => {
+    api.getExamples()
+    .then((data) => {
+        ui.renderExamples(data);
+    })
+    .catch((err) => {
+        console.error(err);
+    })
+};
 
+let registerEvents = () => {
+    getExamples();
 };
 
 module.exports = {
