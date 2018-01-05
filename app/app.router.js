@@ -7,6 +7,8 @@ let events = require('./app.events.js');
 let Navigo = require('../node_modules/navigo/lib/navigo.js');
 let ROUTES = require('./routes.js');
 let root = app.hostUrl;
+let useHash = false;
+let hash = '#!';
 let router;
 
 let getCurrentUrl = () => {
@@ -32,7 +34,7 @@ let generateRoutes = (router) => {
 }
 
 let Routing = function() {
-  router = new Navigo(root);
+  router = new Navigo(root, useHash, hash);
   app.router = router;
   generateRoutes(router);
   router.notFound(function () {notFound.renderNotFoundTemplate();});
