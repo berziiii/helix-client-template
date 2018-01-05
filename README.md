@@ -1,4 +1,4 @@
-#Insight Studio
+# Insight Studio
 
 ## Client Template
 
