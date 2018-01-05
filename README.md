@@ -2,6 +2,8 @@
 
 ## Client Template
 
+A Front-End Framework for Client Templates. Intended to be used with [Express API Template](http://10.25.34.113:4700/bberzellini/express-api-template) or another server-side API for data.
+
 ### Tooling
 -   Webpack
 -   Gulp
