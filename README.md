@@ -76,5 +76,5 @@ Browsersync is the web server that handles the compiling and rendering of the ap
 `public/` is the location of the development javascript and styling files. This will automatically be updated with the most recent saved code changes when the application is running through `gulp serve`.
 
 #### PRODUCTION (DIST/)
-When the time comes to deploy the application onto a client server, `gulp build` will handle all minification, compiling, image optimzation and move all necessary assets into a `dist/` directory. You only need to move the contents of THIS `dist/` directory onto a client server and you are done!
+When the time comes to deploy the application onto a client server, `gulp build` will handle all minification, compiling, image optimzation and move all necessary assets into a `dist/` directory. BEFORE DOING THIS, you must change the `hostUrl` in `app.globals.js` to the server which you will be placing the code. Then, you only need to move the contents of THIS `dist/` directory onto a client server and you are done!
 
